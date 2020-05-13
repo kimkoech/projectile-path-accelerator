@@ -1,11 +1,38 @@
 //////////////////////////////////////////////////////////////////////////////////
 // 
-// Module Name: Projectile launcerh 
+// Module Name: Projectile launcher
 // Author(s):  Billy Koech
 // Description: A script to compute the trajectory of a projectile
 //
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+Accelerator
+
+*/
+
+#ifndef __RRT_H__
+#define __RRT_H__
+
+#include <systemc.h>
+#include <nvhls_int.h>
+#include <nvhls_connections.h>
+
+#include <ac_int.h>
+#include <ac_fixed.h>
+#include <ac_float.h>
+#include <ac_complex.h>
+#include <ac_math.h>
+
+#include <stdlib.h>
+#include <time.h>
+
+#ifndef CONSTANTS
+#define CONSTANTS
+#define G = -9.8 // gravitational accel in m/s^2
+#endif
 
 //libraries and modules
 #include <vector>
